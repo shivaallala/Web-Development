@@ -1,0 +1,43 @@
+.homebody {
+    background-image: url("Images/bossbaby.jpeg");
+    background-size: cover; /* Optional: Scales the image to cover the entire background */
+    background-repeat: no-repeat; /* Optional: Prevents image repetition */
+}
+.beach {
+    background-image: url("Images/beach.jpeg");
+    background-size: cover; /* Optional: Scales the image to cover the entire background */
+    background-repeat: no-repeat; /* Optional: Prevents image repetition */
+}
+
+.gold {
+    color: gold
+}
+.bold{
+    font-weight: bold;
+}
+nav ul li {
+    display: inline; /* or display: inline-block; */
+    margin-right: 20px; /* Adjust the spacing between list items */
+  }
+
+ section img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.blue{
+    color: blue
+}
+.home_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxed-header {
+    border: 1px solid #c4e609; /* Set the border style (1px solid black in this example) */
+    padding: 20px; /* Add padding to create space between text and border */
+    border-radius: 5px; /* Add rounded corners (optional) */
+}
