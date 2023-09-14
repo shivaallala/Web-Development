@@ -1,12 +1,18 @@
 .homebody {
-    background-image: url("Images/bossbaby.jpeg");
+    background-image: url("/Images/bossbaby.jpeg");
     background-size: cover; /* Optional: Scales the image to cover the entire background */
     background-repeat: no-repeat; /* Optional: Prevents image repetition */
 }
 .beach {
-    background-image: url("Images/beach.jpeg");
+    background-image: url("/Images/beach.jpeg");
     background-size: cover; /* Optional: Scales the image to cover the entire background */
     background-repeat: no-repeat; /* Optional: Prevents image repetition */
+}
+.large-button {
+    width: 200px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    font-size: 20px; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Adjust padding for text spacing */
 }
 
 .input-container {

@@ -1,3 +1,13 @@
 .bold{
     font-weight: bolder;
 }
+
+.black{
+    color:black
+}
+
+.list-header {
+    border: 1px solid #faf6f6; /* Border properties */
+    padding: 5px; /* Add padding for spacing */
+    background-color: #08ee55; /* Background color */
+  }
