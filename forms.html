@@ -3,7 +3,7 @@
     <head>
         <title>FORMS</title>
         <meta name="description" content="This is the description">
-        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="CSS_folder/Style.css">
     </head>
         <body>
             <header>
@@ -13,18 +13,31 @@
                         <li><a href="About.html">ABOUT</a></li>
                         <li><a href="Resume.html">RESUME</a></li>
                         <li><a href="Signin.html">SIGN IN</a></li>
+                        <li><a href="Ad_Hoc.html">AD_HOC</a></li>
                     </ul>
                 </nav>
                 <hr>
             </header>
             <form>
+                <h5>Enter you name and email address please</h5>
                 <input type="text" name="name" placeholder="write your name...">
                 <input type="text" name="email" value=".....@gmail.com...">
+                <h5>What is your gender?</h5>
                 Male:<input type="radio" name="gender" value="Male">
                 Female:<input type="radio" name="gender" value="Female">
-                Other:<input type="radio" name="gender" value="Other">
-                <input type="text" name="email" placeholder="write your email...">
-
+                Other:<input type="radio" name="gender" value="Other" checked>
+                <h5>What car do you have?</h5>
+                <select>
+                    <option value="car1">Model 3</option>
+                    <option value="car2">Model S</option>
+                    <option value="car3">Model X</option>
+                    <option value="car4">Model Y</option>
+                    <option value="car5">Other</option>
+                </select>
+                <h5>Tell me about your background</h5>
+                <textarea name="message" placeholder="wrtie about yourself"></textarea>
+                <h5>If you are done, please submit</h5>
+                <input type="SUBMIT" name="SUBMIT">
             </form>
         </body>
 </html>
