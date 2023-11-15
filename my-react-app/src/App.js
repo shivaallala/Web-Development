@@ -10,6 +10,7 @@ import Name from './Components/Name';
 import Button from './Components/Button';   
 import Person from './Components/Person';
 import Stylesheet from './Components/Stylesheet.jsx';
+import LifeCycleA from './Components/LifeCycleA';
 
 
 
@@ -40,10 +41,36 @@ const API_URL = 'https://www.alphavantage.co/query?function=MARKET_STATUS&apikey
 
 
 const App = () => {
+
+    const [count, setCount] = useState(27)
+
+    function decrementCount() {
+        setCount(count -1)
+    }
+
+
+
+
+
     return (
         <div>
+            <LifeCycleA />
             <Greet />
-            <Button />
+
+            <div className='frame2'>
+                <Button label = "+"/>
+                <span>{count}</span>
+                <Button label = "-" onClick = {decrementCount()}/>
+            </div>
+
+            <div className='button-pos'>
+                <h1 className='frame'>Button Component</h1>
+                <Button label = "level 1" /><br></br>
+                <Button label = "level 2" /><br></br>
+                <Button label = "level 3" /><br></br>
+                <Button label = "level 4" /><br></br>
+            </div>
+
             <Name />
             <Message />
             <Person />
