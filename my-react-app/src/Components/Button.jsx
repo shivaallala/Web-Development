@@ -5,9 +5,14 @@ import './button.css';
 
 const Button = (props) => {
 
+    const myButtonOnClick= () => {
+        props.onClick();
+        console.log('button clicked')
+    }
+
     return (
         <div style={{marginTop: '2px'}}>
-            <button className = 'button' onClick={props.onClick}>{props.label}</button>
+            <button className = 'button' onClick={myButtonOnClick}>{props.label}</button>
         </div>
     )
 }   

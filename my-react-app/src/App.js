@@ -1,22 +1,19 @@
-import React, { Component} from 'react';  
-import ReactDOM from 'react-dom';  
-import { useState , useEffect } from 'react';    
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import { useState, useEffect } from "react";
 
-
-import './App.css';
-import Greet from './Components/Greet'; 
-import Message from './Components/Message'; 
-import Name from './Components/Name';   
-import Button from './Components/Button';   
-import Person from './Components/Person';
-import Stylesheet from './Components/Stylesheet.jsx';
-import LifeCycleA from './Components/LifeCycleA';
-
-
+import "./App.css";
+import Greet from "./Components/Greet";
+import Message from "./Components/Message";
+import Name from "./Components/Name";
+import Button from "./Components/Button";
+import Person from "./Components/Person";
+import Stylesheet from "./Components/Stylesheet.jsx";
+import LifeCycleA from "./Components/LifeCycleA";
 
 /// API key: 86WP9DRQ75618KKJ
-const API_URL = 'https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=86WP9DRQ75618KKJ';
-
+const API_URL =
+  "https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=86WP9DRQ75618KKJ";
 
 /*const market1 = 
     {
@@ -39,44 +36,41 @@ const API_URL = 'https://www.alphavantage.co/query?function=MARKET_STATUS&apikey
     }
 } */
 
-
 const App = () => {
+  const [count, setCount] = useState(27);
 
-    const [count, setCount] = useState(27)
+  const decrementCount = () => {
+    setCount(count - 1);
+  };
 
-    function decrementCount() {
-        setCount(count -1)
-    }
+  return (
+    <div>
+      <LifeCycleA />
+      <Greet />
 
+      <div className="frame2">
+        <Button label="+" />
+        <span>{count}</span>
+        <Button label="-" onClick={decrementCount} />
+      </div>
+      <div className="button-pos">
+        <h1 className="frame">Button Component</h1>
+        <Button label="level 1" />
+        <br></br>
+        <Button label="level 2" />
+        <br></br>
+        <Button label="level 3" />
+        <br></br>
+        <Button label="level 4" />
+        <br></br>
+      </div>
 
+      <Name />
+      <Message />
+      <Person />
+      <Stylesheet primary={true} />
+    </div>
+  );
+};
 
-
-
-    return (
-        <div>
-            <LifeCycleA />
-            <Greet />
-
-            <div className='frame2'>
-                <Button label = "+"/>
-                <span>{count}</span>
-                <Button label = "-" onClick = {decrementCount()}/>
-            </div>
-
-            <div className='button-pos'>
-                <h1 className='frame'>Button Component</h1>
-                <Button label = "level 1" /><br></br>
-                <Button label = "level 2" /><br></br>
-                <Button label = "level 3" /><br></br>
-                <Button label = "level 4" /><br></br>
-            </div>
-
-            <Name />
-            <Message />
-            <Person />
-            <Stylesheet primary = {true}/>
-        </div>
-    )
-}
- 
-export default App; 
+export default App;
